@@ -1,0 +1,31 @@
+{
+  "name": "vraves-requests",
+  "type": "module",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro check && astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@vraves/trpc": "workspace:*",
+    "@vraves/db": "workspace:*",
+    "@astrojs/check": "^0.5.7",
+    "@astrojs/cloudflare": "^9.1.0",
+    "@imacrayon/alpine-ajax": "^0.5.1",
+    "@tailwindcss/vite": "next",
+    "@types/alpinejs": "^3.13.9",
+    "alpinejs": "^3.13.7",
+    "astro": "^4.5.0",
+    "astro-htmx": "^1.0.5",
+    "htmx.org": "^1.9.10",
+    "tailwindcss": "next",
+    "typescript": "^5.4.2"
+  },
+  "devDependencies": {
+    "@vraves/backend": "workspace:*"
+  }
+}

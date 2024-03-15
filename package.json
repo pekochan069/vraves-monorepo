@@ -1,0 +1,27 @@
+{
+  "name": "vraves-monorepo",
+  "devDependencies": {
+    "@vraves/eslint-config": "*",
+    "@vraves/typescript-config": "*",
+    "prettier": "^3.2.5",
+    "prettier-plugin-astro": "^0.13.0",
+    "prettier-plugin-tailwindcss": "^0.5.12",
+    "turbo": "latest"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "private": true,
+  "scripts": {
+    "build": "turbo build",
+    "dev": "turbo dev",
+    "dev:backend": "turbo dev --scope=\"backend\"",
+    "dev:requests": "turbo dev --scope=\"vraves-backend\"",
+    "lint": "turbo lint",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+  },
+  "workspaces": ["apps/*", "packages/*"],
+  "dependencies": {
+    "zod": "^3.22.4"
+  }
+}

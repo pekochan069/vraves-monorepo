@@ -1,0 +1,23 @@
+{
+	"name": "@vraves/backend",
+	"version": "0.0.0",
+	"private": true,
+	"type": "module",
+	"scripts": {
+		"deploy": "wrangler deploy",
+		"dev": "wrangler dev",
+		"start": "wrangler dev"
+	},
+	"devDependencies": {
+		"@vraves/typescript-config": "workspace:*",
+		"@cloudflare/workers-types": "^4.20240222.0",
+		"wrangler": "^3.32.0"
+	},
+	"dependencies": {
+		"@vraves/trpc": "workspace:*",
+		"@elysiajs/cors": "^0.8.0",
+		"@elysiajs/trpc": "^0.8.0",
+		"@elysiajs/websocket": "^0.2.8",
+		"elysia": "rc"
+	}
+}

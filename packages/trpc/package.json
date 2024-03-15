@@ -1,0 +1,17 @@
+{
+	"name": "@vraves/trpc",
+	"main": "index.ts",
+	"type": "module",
+	"private": true,
+	"dependencies": {
+		"@trpc/client": "^10.45.2",
+		"@trpc/server": "^10.45.2"
+	},
+	"devDependencies": {
+		"@types/bun": "latest",
+		"@vraves/typescript-config": "workspace:*"
+	},
+	"peerDependencies": {
+		"typescript": "^5.0.0"
+	}
+}

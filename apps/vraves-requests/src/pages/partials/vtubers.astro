@@ -1,0 +1,11 @@
+---
+export const partial = true;
+
+import { client } from "~/lib/trpc";
+
+const hello = client.hello.query()
+---
+
+<li class="bg-">
+  {hello}
+</li>
